@@ -38,5 +38,6 @@ A complete e-commerce platform built with HTML/CSS, JavaScript, PHP, and MySQL, 
    - Email: rizwan
    - Password: rizwan123
 
-===============================================
+
+
 I have uploaded a file named 'database' so you can easily create the tables in your database.
