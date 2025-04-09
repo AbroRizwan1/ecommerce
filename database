@@ -1,0 +1,112 @@
+=====================Database name ==================== 
+ ecom 
+=======================product table================ 
+
+CREATE TABLE product (
+id INT AUTO_INCREMENT PRIMARY KEY,
+categories_id init(11),  
+product_mrp float 			
+price float 			
+qty int(11) 			
+image varchar(255) 	
+short_desc varchar(2000) 		
+description text 	
+meta_title varchar(2000) 		
+meta_desc varchar(2000) 		
+meta_key varchar(2000) 		
+status 	tinyint(4) 	
+);
+
+=====================user table==================
+ 
+CREATE TABLE user (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name varchar(255) 	
+password varchar(225) 
+email 	varchar(225) 
+mobile 	int(30) 
+added_on datetime 
+);
+
+=====================admin table============== 
+
+CREATE TABLE admin_user (
+id INT AUTO_INCREMENT PRIMARY KEY,
+username varchar(255) 	
+password varchar(225)  
+);
+
+====================category table================= 
+
+CREATE TABLE categories (
+id INT AUTO_INCREMENT PRIMARY KEY,
+categories 	varchar(255)	
+status 	tinyint(4)  
+);
+
+========================contact us table================== 
+
+CREATE TABLE contact_us(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name varchar(255) 
+email 	varchar(75) 
+mobile 	varchar(15) 
+comment  text 
+added_on datetime 
+);
+
+==================================order table====================== 
+
+CREATE TABLE orders(
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_id int(11)  
+address varchar(20)  
+city varchar(20)
+pincode int(11) 
+payment_type varchar(20) 	
+total_price float 
+payment_status varchar(20)
+order_status int(11) 
+added datetime
+);
+
+============order detail table======================================= 
+
+CREATE TABLE order_details(
+id INT AUTO_INCREMENT PRIMARY KEY,
+order_id int(11) 	 
+product_id int(11) 	
+qty int(11) 	
+price 	float 
+
+);
+
+=====================order status table ================================ 
+
+CREATE TABLE order_status(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name varchar(100) 	 	
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
